@@ -30,7 +30,7 @@ $blanco:#fff;
     color: $blanco;
     text-align: center;
     border-top: dotted;
-    border-top-width:2px; 
+    border-top-width:2px;
 }
 
 </style>
