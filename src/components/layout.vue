@@ -13,40 +13,40 @@
     </div>
     <div class="columns is-marginless is-12 ">
         <div class="column is-6">
-          <p class="notification is-info tamaño">columna 4 </p>
+          <p class="notification is-info size">columna 4 </p>
         </div>
         <div class="column is-3">
-         <div class="tamaño">
+         <div >
            <messages ></messages> 
          </div>
         </div>
         <div class="column">
-          <p class="notification is-danger tamaño">columna 6 </p>
+          <p class="notification is-danger size">columna 6 </p>
         </div>
     </div>
     <div class="columns is-marginless is-12 ">
         <div class="column is-3">
-          <p class="notification is-info tamaño">columna 1 </p>
+          <p class="notification is-info size">columna 1 </p>
         </div>
         <div class="column is-3">
-          <p class="notification is-warning tamaño">columna 2 </p>
+          <p class="notification is-warning size">columna 2 </p>
         </div>
         <div class="column">
-          <p class="notification is-danger tamaño">columna 3 </p>
+          <p class="notification is-danger size">columna 3 </p>
         </div>
     </div>
     <div class="columns is-marginless is-12 ">
         <div class="column is-3">
-          <p class="notification is-info tamaño">columna 1 </p>
+          <p class="notification is-info size">columna 1 </p>
         </div>
         <div class="column is-3">
-          <p class="notification is-warning tamaño">columna 2 </p>
+          <p class="notification is-warning size">columna 2 </p>
         </div>
         <div class="column is-3">
-          <p class="notification is-danger tamaño">columna 3 </p>
+          <p class="notification is-danger size">columna 3 </p>
         </div>
          <div class="column">
-          <p class="notification is-danger tamaño">columna 3 </p>
+          <p class="notification is-danger size">columna 3 </p>
         </div>
     </div>
 </div>
@@ -74,7 +74,7 @@ $column-gap:5px;
         align-items: center;
         width: 100%;
     }
-  .tamaño{
-    height: 264px;
+  .size{
+    height: 300px;
   }
 </style>
