@@ -8,7 +8,7 @@
           <p class="notification is-warning ">columna 2 </p>
         </div>
         <div class="column">
-          <p class="notification is-danger ">columna 3 </p>
+          <navegacion></navegacion>
         </div>
     </div>
     <div class="columns is-marginless is-12 ">
@@ -21,7 +21,7 @@
          </div>
         </div>
         <div class="column">
-          <p class="notification is-danger size">columna 6 </p>
+          <tarea></tarea>
         </div>
     </div>
     <div class="columns is-marginless is-12 ">
@@ -29,7 +29,7 @@
           <p class="notification is-info size">columna 1 </p>
         </div>
         <div class="column is-3">
-          <p class="notification is-warning size">columna 2 </p>
+          <destacado></destacado>
         </div>
         <div class="column">
           <p class="notification is-danger size">columna 3 </p>
@@ -54,13 +54,19 @@
 
 <script>
 import messages from "./messages";
+import destacado from "./destacado";
+import tarea from "./tarea";
+import navegacion from "./navegacion";
 export default {
   name: 'layout',
   methods:{
 
   },
   components:{
-    'messages': messages
+    'messages': messages,
+    'destacado':destacado,
+    'tarea':tarea,
+    'navegacion':navegacion,
   }
 }
 </script>
