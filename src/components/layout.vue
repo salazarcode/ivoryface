@@ -43,10 +43,10 @@
           <p class="notification is-warning size">columna 2 </p>
         </div>
         <div class="column is-3">
-          <p class="notification is-danger size">columna 3 </p>
+         <entradas></entradas>        
         </div>
          <div class="column">
-          <p class="notification is-danger size">columna 3 </p>
+          <feed></feed>
         </div>
     </div>
 </div>
@@ -57,6 +57,8 @@ import messages from "./messages";
 import destacado from "./destacado";
 import tarea from "./tarea";
 import navegacion from "./navegacion";
+import feed from "./feed";
+import entradas from "./entradas";
 export default {
   name: 'layout',
   methods:{
@@ -67,6 +69,8 @@ export default {
     'destacado':destacado,
     'tarea':tarea,
     'navegacion':navegacion,
+    'feed':feed,
+    'entradas':entradas,
   }
 }
 </script>
