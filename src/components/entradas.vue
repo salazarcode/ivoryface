@@ -3,11 +3,11 @@
         <div class="inicio">
             <p>Entradas</p>
         </div>
-        <div class="boton">
-            <a>+</a>
+        <div >
+            <a class="boton">+</a>
         </div>
-         <div class="boton s">
-            <a>Publicar nuevo articulo</a>
+         <div >
+            <a class="boton s">Publicar nuevo articulo</a>
         </div>
           <div class="sub">
             <p>Borradores</p>
@@ -73,7 +73,7 @@ $degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%)
     border-radius: 40px;
     font-size: 20px;
     background: $blanco;
-    color: $blanco;
+    color: $azul;
     font-weight:normal;
     transform: translate(40px, 51px);
     opacity:1;
@@ -81,6 +81,7 @@ $degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%)
     justify-content: center;
     align-items: center;
     &.s{
+        text-decoration: none;
         width: 113px;
         height: 35px ;
         font-size: 10px;

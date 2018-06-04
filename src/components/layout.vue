@@ -40,7 +40,7 @@
           <p class="notification is-info size">columna 1 </p>
         </div>
         <div class="column is-3">
-          <p class="notification is-warning size">columna 2 </p>
+          <publicaciones></publicaciones>
         </div>
         <div class="column is-3">
          <entradas></entradas>        
@@ -59,6 +59,7 @@ import tarea from "./tarea";
 import navegacion from "./navegacion";
 import feed from "./feed";
 import entradas from "./entradas";
+import publicaciones from "./publicaciones";
 export default {
   name: 'layout',
   methods:{
@@ -71,6 +72,7 @@ export default {
     'navegacion':navegacion,
     'feed':feed,
     'entradas':entradas,
+    'publicaciones':publicaciones,
   }
 }
 </script>
