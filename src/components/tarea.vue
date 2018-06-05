@@ -3,8 +3,8 @@
     <div class="inicio">
         <p>Notas</p>
     </div>
-       <div class="boton">
-        <p>+</p>
+       <div >
+        <a class="boton">+</a>
     </div>
     <div class="contenedor">
         <ul>

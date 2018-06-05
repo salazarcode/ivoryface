@@ -19,8 +19,8 @@
      <div class="cajita chat">
         <p>17</p>
      </div>
-     <div class="cajita icono">
-        <p>+</p>
+     <div >
+        <a class="cajita icono">+</a>
      </div>
       <div class="cajita chatabierto">
         <p>Chats Abiertos</p>

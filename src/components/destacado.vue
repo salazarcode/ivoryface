@@ -1,7 +1,7 @@
 <template>
     <div class="destacado size">
-       <div class="icono">
-            <p>+</p>   
+       <div >
+            <a class="icono">+</a>   
         </div> 
         <div class="icono int">
             <img src="../assets/recursos/logo-instagram-blanco.png"  >
@@ -12,8 +12,8 @@
         <div class="icono fb">
             <img src="../assets/recursos/logo-facebook-blanco.png"  >
         </div>
-        <div class="icono pdf">
-            <p>PDF</p>
+        <div >
+            <a class="icono pdf">PDF</a>
         </div>
         <div class=" icono contenido">
                <p><img src="../assets/recursos/logo-facebook-blanco.png" width="18px" height="18 px"  > Contenido destacado</p>
