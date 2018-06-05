@@ -3,8 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-//import 'bulma-carousel/dist/bulma-carousel.min';
-
+import 'bulma/css/bulma.css'
+import 'bulma'
 
 Vue.config.productionTip = false
 
@@ -15,5 +15,4 @@ new Vue({
   components: { App },
   template: '<App/>'
 });
-var carousel = bulmaCarousel.attach();
 

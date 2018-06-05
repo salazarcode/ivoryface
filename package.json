@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bulma": "^0.7.1",
     "bulma-carousel": "^2.0.14",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
