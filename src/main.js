@@ -6,12 +6,16 @@ import router from './router'
 import 'bulma/css/bulma.css'
 import 'bulma'
 
-Vue.config.productionTip = false
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
+import { Carousel, Slide } from 'vue-carousel';
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  Carousel,
+  Slide,
   components: { App },
   template: '<App/>'
 });

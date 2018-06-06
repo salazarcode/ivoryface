@@ -1,133 +1,146 @@
 <template>
-<div class="slideshow">
-  <ul class="slider">
-		<li>
-			<div class="sliderimagen">
-				<img src="../assets/recursos/foto-02.png" class="img"  >
-			</div>
-    </li>
-    <li>
-        <div class="sliderimagen">
-          <img src="../assets/recursos/foto-03.png" class="img" >
-        </div>
-    </li>
-  </ul>
-  <div class="left">
-        <span class="fa fa-chevron-left"></span>
+<carousel>
+  <slide>
+    <div class="contenedorbotones">
+    <img src="../assets/recursos/logo-instagram-azul.png">
+    <img src="../assets/recursos/logo-twitter-azul.png">
+    <img src="../assets/recursos/logo-facebook-azul.png">
+    <a class="mas">+</a>
+    </div>
+    <div class="contenedorimagen">
+   <img src="../assets/recursos/foto-02.png" class="img">
+    </div>
+  </slide>
+  <slide>
+    <div class="contenedorbotones dos">
+    <img src="../assets/recursos/logo-instagram-azul.png">
+    <img src="../assets/recursos/logo-twitter-azul.png">
+    <img src="../assets/recursos/logo-facebook-azul.png">
+    <a class="mas dos">+</a>
+    </div>
+      <div class="contenedorimagen">
+        <img src="../assets/recursos/foto-03.png" class="img">
       </div>
-
-      <div class="right">
-        <span class="fa fa-chevron-right"></span>
-  </div>
-</div>
+  </slide>
+   <slide>
+        <div class="contenedorbotones tres">
+    <img src="../assets/recursos/logo-instagram-azul.png">
+    <img src="../assets/recursos/logo-twitter-azul.png">
+    <img src="../assets/recursos/logo-facebook-azul.png">
+    <a class="mas tres">+</a>
+    </div>
+     <div class="contenedorimagen">
+        <img src="../assets/recursos/foto-02.png" class="img">
+     </div>
+  </slide>
+   <slide>
+    <div class="contenedorbotones cuatro">
+    <img src="../assets/recursos/logo-instagram-azul.png">
+    <img src="../assets/recursos/logo-twitter-azul.png">
+    <img src="../assets/recursos/logo-facebook-azul.png">
+    <a class="mas cuatro">+</a>
+    </div>
+     <div class="contenedorimagen">
+        <img src="../assets/recursos/foto-03.png" class="img">
+     </div>
+  </slide>
+   <slide>
+     <div class="contenedorbotones cinco">
+    <img src="../assets/recursos/logo-instagram-azul.png">
+    <img src="../assets/recursos/logo-twitter-azul.png">
+    <img src="../assets/recursos/logo-facebook-azul.png">
+    <a class="mas cinco">+</a>
+    </div>
+      <div class="contenedorimagen">
+        <img src="../assets/recursos/foto-02.png" class="img">
+      </div>
+  </slide>
+</carousel>
 </template>
-<script>
-export default {
-  
+<style lang="scss">
+$blanco:#fff;
+$negro:#000;
+$gris:#434B52;
+$azul:#1F8EFA;
+$verdea:#75EAFF;
+$degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%);
+
+  .VueCarousel-inner {
+    //flex-basis: 327px !important;
+    position: relative;
+  }
+.VueCarousel-slide{
+  position: relative;
 }
-$(document).ready(function(){
-	var imgItems = $('.slider li').length; // Numero de Slides
-	var imgPos = 1;
-
-	$('.slider li').hide(); // Ocultanos todos los slides
-	$('.slider li:first').show(); // Mostramos el primer slide
-	$('.pagination li:first').css({'color': '#CD6E2E'}); // Damos estilos al primer item de la paginacion
-
-	// Ejecutamos todas las funciones
-	$('.pagination li').click(pagination);
-	$('.right span').click(nextSlider);
-	$('.left span').click(prevSlider);
-
-
-
-	// FUNCIONES =========================================================
-
-	function pagination(){
-		var paginationPos = $(this).index() + 1; // Posicion de la paginacion seleccionada
-
-		$('.slider li').hide(); // Ocultamos todos los slides
-		$('.slider li:nth-child('+ paginationPos +')').fadeIn(); // Mostramos el Slide seleccionado
-
-		// Dandole estilos a la paginacion seleccionada
-		$('.pagination li').css({'color': '#858585'});
-		$(this).css({'color': '#CD6E2E'});
-
-		imgPos = paginationPos;
-
-	}
-
-	function nextSlider(){
-		if( imgPos >= imgItems){imgPos = 1;} 
-		else {imgPos++;}
-
-		$('.pagination li').css({'color': '#858585'});
-		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#CD6E2E'});
-
-		$('.slider li').hide(); // Ocultamos todos los slides
-		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
-
-	}
-
-	function prevSlider(){
-		if( imgPos <= 1){imgPos = imgItems;} 
-		else {imgPos--;}
-
-		$('.pagination li').css({'color': '#858585'});
-		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#CD6E2E'});
-
-		$('.slider li').hide(); // Ocultamos todos los slides
-		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
-	}
-
-});
-
-</script>
-
-<style lang="scss" scoped>
-ul,ol{
-	list-style: none;
-}
-
-.slideshow{
-	width: 100%;
-	position: relative;
-}
-
-.slider  ul{
-  width: 100%;
-    position: absolute;
-}
-
-
-.sliderimagen{
-    top: 17px;
-    align-items: center;
-    justify-content: center;
+  .VueCarousel-slide .contenedorimagen {
+    margin: 15px 10px 10px 2.1%;
+    //position: absolute;
+    transform: translate(18px, 4px);
+    width: 116px;
     overflow: hidden;
+    height: 116px;
+    filter:drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.15));
+     border-radius: 5px;
+     padding: 0;
+
+  }
+
+.VueCarousel-slide .img {
+    height: 100%;
+    width: auto !important;
+    max-width: none;
+}
+.VueCarousel-dot-container{
+top: -25px;
+position: relative;
+}
+
+.contenedorbotones {
+    top: 12px;
     position: absolute;
-
-
-}
-.img{
-    height: 146px;
-    width: 60%;
-}
-.left{
+    left: 49px;
+    height: 15px;
+    width: 15px;
+    z-index: 9999999;
     display: flex;
+    &.dos{
+      left: 49px;
+      position: absolute;
+    }
+     &.tres{
+      left: 49  px;
+      position: absolute;
+    }
+    &.cuatro{
+      left: 49px;
+      position: absolute;
+    }
+      &.cinco{
+      left: 49px;
+      position: absolute;
+    }
+}
+.contenedorbotones img {
+    margin-right: 5px;
+}
+.mas{
+    top: 33px;
+    left: 37px;
+    border-radius: 5px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    transform: translate(87%, -153%);
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 64px;
-    left: 11px;
-}
-.right{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 64px;
-    right: 11px;
-}
+    font-size: 0.6em;
+    filter: drop-shadow(0px 15px 10px rgba(0, 0, 0, 0.1));
+    border-radius: 50%;
+    font-size: 15px;
+    background:$degradado;
+    color: #fff;
+    display: flex;
+    }
 
 </style>
 
