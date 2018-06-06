@@ -2,10 +2,10 @@
   <div class="container">
     <div class="columns is-marginless is-12 header">
         <div class="column is-6">
-          <p class="notification is-info">columna 1 </p>
+          <user></user>
         </div>
         <div class="column is-3">
-          <p class="notification is-warning ">columna 2 </p>
+          <delegados></delegados>
         </div>
         <div class="column">
           <navegacion></navegacion>
@@ -26,27 +26,28 @@
     </div>
     <div class="columns is-marginless is-12 ">
         <div class="column is-3">
-          <p class="notification is-info size">columna 1 </p>
+          <p class="notification is-info size-2">columna 1 </p>
         </div>
-        <div class="column is-3">
+
+        <div class="column is-9">
+          <div class="columns is-multiline">
+        <div class="column is-4">
           <destacado></destacado>
         </div>
-        <div class="column">
+        <div class="column is-8">
           <p class="notification is-danger size">columna 3 </p>
         </div>
-    </div>
-    <div class="columns is-marginless is-12 ">
-        <div class="column is-3">
-          <p class="notification is-info size">columna 1 </p>
-        </div>
-        <div class="column is-3">
+
+        <div class="column is-4">
           <publicaciones></publicaciones>
         </div>
-        <div class="column is-3">
+        <div class="column is-4">
          <entradas></entradas>        
         </div>
-         <div class="column">
+         <div class="column is-4">
           <feed></feed>
+        </div>
+        </div>
         </div>
     </div>
 </div>
@@ -60,6 +61,8 @@ import navegacion from "./navegacion";
 import feed from "./feed";
 import entradas from "./entradas";
 import publicaciones from "./publicaciones";
+import user from "./user";
+import delegados from "./delegados";
 export default {
   name: 'layout',
   methods:{
@@ -73,6 +76,8 @@ export default {
     'feed':feed,
     'entradas':entradas,
     'publicaciones':publicaciones,
+    'user':user,
+    'delegados':delegados,
   }
 }
 </script>
@@ -88,5 +93,9 @@ $column-gap:5px;
     }
   .size{
     height: 300px;
+  }
+
+  .size-2{
+    height: 650px;
   }
 </style>
