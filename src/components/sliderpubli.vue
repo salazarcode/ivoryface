@@ -1,5 +1,5 @@
 <template>
-<carousel>
+<carousel :per-page="2" :navigate-to="someLocalProperty" :mouse-drag="false" :paginationEnabled="false">
   <slide>
     <div class="contenedorbotones">
     <img src="../assets/recursos/logo-instagram-azul.png">
@@ -68,6 +68,7 @@ $degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%)
   .VueCarousel-inner {
     //flex-basis: 327px !important;
     position: relative;
+    height: 168px;;
   }
 .VueCarousel-slide{
   position: relative;
@@ -78,7 +79,7 @@ $degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%)
     transform: translate(18px, 4px);
     width: 116px;
     overflow: hidden;
-    height: 116px;
+    height: 153px;
     filter:drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.15));
      border-radius: 5px;
      padding: 0;
@@ -103,6 +104,7 @@ position: relative;
     width: 15px;
     z-index: 9999999;
     display: flex;
+    cursor: pointer;
     &.dos{
       left: 49px;
       position: absolute;
@@ -141,6 +143,7 @@ position: relative;
     color: #fff;
     display: flex;
     }
+    
 
 </style>
 

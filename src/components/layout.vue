@@ -96,6 +96,6 @@ $column-gap:5px;
   }
 
   .size-2{
-    height: 650px;
+    height: 625px;
   }
 </style>

@@ -58,6 +58,7 @@ $degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%)
     filter:drop-shadow(0px 15px 10px rgba(0,0,0,0.3));
     position: relative;
     overflow: hidden;
+    
 
      &::after {
         content: '';
@@ -97,6 +98,7 @@ img{
     height: 25px;
     float: right;
     padding: 5px;
+    cursor: pointer;
 }
 .boton{
         border-radius: 50%;
@@ -110,5 +112,6 @@ img{
         height: 20px;
         display: flex;
         transform: translate(5px, 3px);
+        cursor: pointer;
         }
 </style>

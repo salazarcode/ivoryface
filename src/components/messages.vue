@@ -99,6 +99,7 @@ $verdea:#75EAFF;
     border-color: rgba(255, 255, 255, 0.3);
     padding: 15px;
     align-self: center;
+  
     
 }
 .image-footer{
@@ -107,6 +108,7 @@ $verdea:#75EAFF;
    height: 30px;
    width: 30px;
    display: inline-block;
+     cursor: pointer;
 
    &.sss{
     border-radius: 50%;
@@ -115,6 +117,7 @@ $verdea:#75EAFF;
     color: $verdea;
     font-size: 20px;
     font-weight: bold;
+      cursor: pointer;
    }
 }
 
@@ -137,17 +140,20 @@ $verdea:#75EAFF;
  
   &.fb {
     transform: translate(64%, -33%);
+      cursor: pointer;
 
   }
 
   &.tw {
     transform: translate(38%, 86%);
+      cursor: pointer;
   }
   &.chat{
     transform: translate(-197%, -167%);;
     border-radius: 50%;
     width: 30px;
     height: 30px ;
+      cursor: pointer;
 
   }
   &.icono{
@@ -158,6 +164,7 @@ $verdea:#75EAFF;
     font-size: 20px;
     background: $blanco;
     color: $verdea;
+      cursor: pointer;
 
   }
    &.chatabierto{
@@ -166,6 +173,7 @@ $verdea:#75EAFF;
     width: 30px;
     height: 30px ;
     text-align: left;
+      cursor: pointer;
     
   }
    &.chatactivo{
@@ -177,6 +185,7 @@ $verdea:#75EAFF;
     text-align: left;
     font-size: 0.9em;
     font-weight: normal;
+      cursor: pointer;
 
   }
   &.panel{
@@ -189,10 +198,12 @@ $verdea:#75EAFF;
     font-size: 0.9em;
     color: $azul;
     font-weight: normal;
+      cursor: pointer;
   }
 
   img {
     height: 15px; margin: 3px 3px 2px 0px;
+      cursor: pointer;
   }
 
 }

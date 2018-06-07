@@ -71,6 +71,7 @@ $degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%)
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     &.int{
         background: transparent;
         transform: translate(24px, -8px);

@@ -53,6 +53,7 @@ $degradado:linear-gradient(to right, rgba(0,223,228,1) 0%, rgba(12,219,198,1) 85
     position: absolute;
     top: 15px;
     left: 15px;
+      cursor: pointer;
     &.dos{
         left: 59px;
     }
@@ -82,6 +83,7 @@ $degradado:linear-gradient(to right, rgba(0,223,228,1) 0%, rgba(12,219,198,1) 85
     transform: translate(40px, 40px);
     overflow: hidden;
     position: absolute;
+
      &.uno{
       transform: translate(85px, 40px);   
      }

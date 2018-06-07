@@ -47,7 +47,7 @@ $degradado:linear-gradient(to right, rgba(0,223,228,1) 0%, rgba(12,219,198,1) 85
     border-radius: 50%;
     background: $degradado;
     font-weight:normal;
-   
+     cursor: pointer;
     opacity:1;
     display: flex;
     justify-content: center;
