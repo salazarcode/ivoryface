@@ -13,7 +13,7 @@
     </div>
     <div class="columns is-marginless is-12 ">
         <div class="column is-6">
-          <p class="notification is-info size">columna 4 </p>
+         <!-- <subsliderventa></subsliderventa>-->
         </div>
         <div class="column is-3">
          <div >
@@ -26,7 +26,7 @@
     </div>
     <div class="columns is-marginless is-12 ">
         <div class="column is-3">
-          <p class="notification is-info size-2">columna 1 </p>
+          <ventas></ventas>
         </div>
 
         <div class="column is-9">
@@ -63,6 +63,8 @@ import entradas from "./entradas";
 import publicaciones from "./publicaciones";
 import user from "./user";
 import delegados from "./delegados";
+import ventas from "./ventas";
+import subsliderventa from "./subsliderventa";
 export default {
   name: 'layout',
   methods:{
@@ -78,6 +80,8 @@ export default {
     'publicaciones':publicaciones,
     'user':user,
     'delegados':delegados,
+    'ventas':ventas,
+    'subsliderventa':subsliderventa,
   }
 }
 </script>

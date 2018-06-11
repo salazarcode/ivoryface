@@ -1,5 +1,4 @@
 <template>
-
 <carousel :mouse-drag="true" :Touch-friendly="true" :paginationEnabled="false">
   <slide>
     <div class="contenedorbotones">
@@ -9,7 +8,7 @@
     <a class="mas">+</a>
     </div>
     <div class="contenedorimagen">
-   <img src="../assets/recursos/foto-03.png" class="img">
+        <subsliderventa></subsliderventa>
     </div>
   </slide>
   <slide>
@@ -58,6 +57,14 @@
   </slide>
 </carousel>
 </template>
+<script>
+import subsliderventa from "./subsliderventa";
+export default {
+  components:{
+     'subsliderventa':subsliderventa,
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 $blanco:#fff;
