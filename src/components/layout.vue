@@ -13,7 +13,7 @@
     </div>
     <div class="columns is-marginless is-12 ">
         <div class="column is-6">
-         <!-- <subsliderventa></subsliderventa>-->
+          <interacciones></interacciones>
         </div>
         <div class="column is-3">
          <div >
@@ -65,6 +65,7 @@ import user from "./user";
 import delegados from "./delegados";
 import ventas from "./ventas";
 import subsliderventa from "./subsliderventa";
+import interacciones from "./interacciones";
 export default {
   name: 'layout',
   methods:{
@@ -82,6 +83,7 @@ export default {
     'delegados':delegados,
     'ventas':ventas,
     'subsliderventa':subsliderventa,
+    'interacciones':interacciones,
   }
 }
 </script>
