@@ -35,7 +35,7 @@
           <destacado></destacado>
         </div>
         <div class="column is-8">
-          <p class="notification is-danger size">columna 3 </p>
+          <world></world>
         </div>
 
         <div class="column is-4">
@@ -66,6 +66,7 @@ import delegados from "./delegados";
 import ventas from "./ventas";
 import subsliderventa from "./subsliderventa";
 import interacciones from "./interacciones";
+import world from "./world";
 export default {
   name: 'layout',
   methods:{
@@ -84,6 +85,7 @@ export default {
     'ventas':ventas,
     'subsliderventa':subsliderventa,
     'interacciones':interacciones,
+    'world':world,
   }
 }
 </script>
