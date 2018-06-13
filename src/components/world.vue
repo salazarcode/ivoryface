@@ -1,7 +1,7 @@
 <template>
     <div class="world size">
         <div class="mundo">
-            <img src="../assets/recursos/world.svg">
+            <img src="../assets/recursos/world.svg"  type="image/svg+xml">
         </div>
         <div class="letra">
             <p>1225</p>
@@ -126,4 +126,5 @@ $degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%)
           float: right;
 }
 </style>
+
 
