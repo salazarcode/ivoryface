@@ -2,7 +2,8 @@
 <div class="messages size">
    <div class="carta">
      <img src="../assets/recursos/barra-inferior.png" width="100px" height="100px" style="position: absolute; top:50%; left:50%; transform:translate(-50%, -50%); filter:drop-shadow(0px 15px 10px rgba(0,0,0,0.3));">
-     <img src="../assets/recursos/icon-mensaje.png" width="35px" height="25px" style="position: absolute; transform: translate(-7%, -7%);">
+     <img src="../assets/recursos/icon-mensaje.png" width="35px" height="25px" style="position: absolute; transform: translate(-7%, -7%); cursor:pointer;"
+     @click="ir()">
      <p class="p">35</p>
      <div class="cajita wp">
         <img src="../assets/recursos/logo-wordpress-blanco.png" >
@@ -55,7 +56,9 @@
 export default {
   name: 'messages',
   methods:{
-
+    ir: function(){
+      this.$router.push('/chat');
+    }
   }
 }
 </script>
