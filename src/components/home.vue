@@ -21,7 +21,6 @@
 
 <script>
 import selection from "./selection";
-
 import user from "./user";
 import delegados from "./delegados";
 import navegacion from "./navegacion";

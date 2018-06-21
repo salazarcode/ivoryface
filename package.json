@@ -12,6 +12,8 @@
   "dependencies": {
     "bulma": "^0.7.1",
     "bulma-carousel": "^2.0.14",
+    "electron": "^2.0.3",
+    "electron-forge": "^5.2.2",
     "vue": "^2.5.2",
     "vue-carousel": "^0.8.1",
     "vue-router": "^3.0.1"
