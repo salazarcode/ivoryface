@@ -15,10 +15,31 @@
         <div class="icono letra-2">
             <p>Bandeja de entrada</p>
         </div>
-        <div class="mensajes">
-            <div class="caja">
-                <img src="../assets/recursos/foto-01.png" class="foto">
-                <div class="punto"></div>
+        <div class="cont">
+            <div class="mensajes">
+                <div class="caja msj ">
+                    <div class="cajita foto ">
+                    <img src="../assets/recursos/foto-01.png" style="border-radius: 50%;">
+                    <div class="punto"></div>
+                    </div>
+                    <div class="cajita contenido">
+                        <h3 class="titulo">titulo tal</h3>
+                        <p class="mensajito"></p>
+                    </div>
+                    
+                </div>
+                <div class="caja">
+                    <img src="../assets/recursos/foto-01.png" class="foto">
+                    <div class="punto"></div>
+                </div>
+                <div class="caja">
+                    <img src="../assets/recursos/foto-01.png" class="foto">
+                    <div class="punto"></div>
+                </div>
+                <div class="caja">
+                    <img src="../assets/recursos/foto-01.png" class="foto">
+                    <div class="punto"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -114,19 +135,27 @@ $degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%)
      }
 }
 .mensajes{
-    transform:translate(0px,127px);
     height: 350px;
+    overflow: hidden;
+    overflow-y: scroll;  
+    position: relative;
+    right: -17px;
+}
+.cont{
+    transform:translate(0px,127px);
+    overflow: hidden;
+    right: 9px;
+    position: relative
 }
 .foto{
-    display: flex;
     filter:drop-shadow(0px 15px 10px rgba(0,0,0,0.3));
-    border-radius: 50px;
     overflow: hidden;
     width: 35px;
     height: 35px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
+    position: relative;
+    /*top: 15px;
+    left: 15px;*/
+     //transform: translate(-113px, 18px);
 }
 .punto{
     height: 10px;
@@ -134,20 +163,21 @@ $degradado:linear-gradient(45deg, rgba(77,166,254,1) 0%, rgba(0,228,253,1) 100%)
     background: #00BD43;
     font-size: 100px;
     border-radius: 50px;
-    transform: translate(40px, 40px);
+    //transform: translate(40px, 40px);
     overflow: hidden;
     position: absolute;
-
-     &.uno{
-      transform: translate(85px, 40px);   
-     }
+    top: 24px;
+    left: 25px;
 }
 .caja{
     height: 100px;
     width: 100%;
     border:solid;
     //transform: translate(-4px,127px);
-    margin-top: 23px;
+    margin-top: 10px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
 }
 </style>
 
