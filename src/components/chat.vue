@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        Hola mundo soy yo. <router-link to="/">Volver</router-link>
+        Hola mundo soy yo valeeeee. <router-link to="/">Volver</router-link>
     </div>
 </template>
 <script>
